@@ -17,6 +17,9 @@ The following is a template of implementing a **ContentCenterListener** instance
 
     final ContentCenterListener listener = (final ContentCenterListener.EVENT event, final ContentCenterListener.NOTIFY notify, final JSONObject information) -> {
     	switch (event) {
+        case INITIAL_FAIL:
+          // TODO If you want to hanlde the failed event when initialing ContentCenter, please write your code here and return true.
+          return true;
         case INITIAL_PRAGMA:
     			// TODO Before building your database, there are some features of the database can be controled.
     			return true;
